@@ -1,0 +1,47 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #97bbf1;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+    margin-top: 50px !important;
+}
+
+.notification {
+    position: fixed;
+    padding: 5px 10px;
+    width: 100%;
+    display: none;
+}
+
+.success {
+    background-color: #00ffac;
+}
+
+.viewerDiv {
+    margin: 10px 0px !important;
+    background-color: #dbe5ff;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.viewer, img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+button {
+    width: 148px;
+    margin: 10px 0px 10px !important;
+}
+
+select {
+    width: 300px !important;
+}

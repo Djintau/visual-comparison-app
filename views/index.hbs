@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <h1>{{title}}</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Test Result</h2>
+            <div class="viewerDiv">
+                <webvis-viewer class="viewer">
+                </webvis-viewer>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h2>Ground Truth</h2>
+            <div class="viewerDiv">
+                <div id="groundTruth"></div>
+            </div>   
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h2>Error Image</h2>
+            <div class="viewerDiv">
+                <div id="errorImage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button id="runTest" class="btn btn-primary">Run</button>
+            <button id="downloadImage" class="btn btn-primary">Download</button>
+            <select id="selectTest" class="form-select">
+                <option value="">Select test</option>
+                {{#each tests}}
+                <option value={{.}}>{{.}}</option>
+                {{/each}}
+            </select>
+            <p id="diffPercent"></p>
+        </div>
+    </div>
+</div>
