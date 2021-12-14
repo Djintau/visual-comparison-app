@@ -6,6 +6,7 @@
 From root directory of this project:
 - run `npm install` to install the dependencies specified in package.json
 - to run the application use command `npm start` from your terminal
+- you will need to create 2 directories under `public/images`: `diffs` and `results`
 - to run the application with hot reload you need to install nodemon `npm install -g nodemon` and then
   you can run the application with `DEBUG=visual-comparison-app:* nodemon --exec npm start`
 - go to `http://localhost:3000/` in your browser
